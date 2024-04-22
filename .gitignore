@@ -1,6 +1,7 @@
 build
 .clangd
 .clang-format
+.cache
 # we block this gitignore because 
 # it's source is in clang_config
 # .gitignore
