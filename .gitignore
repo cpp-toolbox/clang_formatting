@@ -1,10 +1,9 @@
+.idea
 build
 build_debug
 build_release
 .clangd
 .clang-format
 .cache
-# we block this gitignore because 
-# it's source is in clang_config
-# .gitignore
-
+CMakeUserPresets.json
+# note that in the context of clang_formatting we cannot include .gitignore because then it wouldn't keep track of it.
