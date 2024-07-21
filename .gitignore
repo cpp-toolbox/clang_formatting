@@ -1,5 +1,6 @@
 # ide stuff
 .idea
+.vscode
 # cmake stuff
 build
 cmake-build-debug
