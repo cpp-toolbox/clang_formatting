@@ -13,3 +13,4 @@ CMakeUserPresets.json
 .clang-format
 .cache
 # note that in the context of clang_formatting we cannot include .gitignore because then it wouldn't keep track of it.
+imgui.ini
