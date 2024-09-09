@@ -9,6 +9,9 @@ def main():
     parser.add_argument('root_dir', type=str, help='Root directory where files will be copied')
     args = parser.parse_args()
 
+    # Get the directory of the script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
     # Ensure the root directory exists
     root_dir = os.path.abspath(args.root_dir)
     if not os.path.exists(root_dir):
@@ -18,7 +21,7 @@ def main():
     # List of files to process
     files_to_copy = ['.clangd', '.clang-format', '.gitignore']
     for file_name in files_to_copy:
-        src = os.path.join(os.getcwd(), file_name)
+        src = os.path.join(script_dir, file_name)
         dest = os.path.join(root_dir, file_name)
 
         if file_name == '.gitignore' and os.path.exists(dest):
