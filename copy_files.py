@@ -18,6 +18,7 @@ def main():
         print(f"Error: The specified root directory '{root_dir}' does not exist.")
         return
 
+    script_dir = os.path.dirname(os.path.abspath(__file__))
     # List of files to process
     files_to_copy = ['.clangd', '.clang-format', '.gitignore']
     for file_name in files_to_copy:
